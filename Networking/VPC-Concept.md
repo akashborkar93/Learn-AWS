@@ -10,7 +10,7 @@ This is the core rule of VPC peering. Peering connections only allow direct, one
 2.Your startup is growing fast. You now have 10 VPCs that all need to talk directly to each other. You decide to use VPC peering to connect them in a full mesh. How many total peering connections do you need to create and manage?
 
 Answer
-```
+
 # VPC Peering Full Mesh Calculation
 
 Your startup has **10 VPCs** and each VPC must connect directly to every other VPC using **VPC Peering**.
@@ -70,4 +70,4 @@ Because of this, large AWS environments usually prefer:
 - AWS Transit Gateway
 - Hub-and-Spoke Networking
 - Shared Services VPC Architecture
-```
+
