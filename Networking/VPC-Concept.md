@@ -79,6 +79,14 @@ Create a Transit Gateway VPC attachment for each VPC, specifying the gateway ID,
 This is how we connect VPCs to a Transit Gateway. We create an attachment that links the central gateway ID to our specific VPC ID and selects the subnets to use for traffic.
 ```
 
+Your company has 25 VPCs connected through a messy web of peer-to-peer connections. Managing these routes is becoming a massive headache. You decide to move to a central hub-and-spoke model. You just created a Transit Gateway using aws ec2 create-transit-gateway. What is the next step to connect your first VPC to this central router?
+
+Answer
+```
+Create a VPC attachment using aws ec2 create-transit-gateway-vpc-attachment with the gateway ID, VPC ID, and subnet IDs.
+
+This is exactly how we plug a VPC into our central router. We use the attachment command to link the Transit Gateway ID to our specific VPC and subnets.
+```
 
 
 
