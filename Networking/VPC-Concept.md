@@ -68,6 +68,17 @@ Basically, the first command spins up our central router. The second command plu
 
 <img width="807" height="485" alt="image" src="https://github.com/user-attachments/assets/bdaea3e0-a2da-4479-8b83-8836dd7335b2" />
 
+Quiz
+
+Your team is migrating from a complex web of 25 VPC peering connections to a central AWS Transit Gateway. You created the central gateway resource, but none of the VPCs can send traffic to it yet. You need to connect your VPCs to the gateway. What is the next step to plug these VPCs into your new central hub?
+
+Answer:
+```
+Create a Transit Gateway VPC attachment for each VPC, specifying the gateway ID, VPC ID, and target subnets.
+
+This is how we connect VPCs to a Transit Gateway. We create an attachment that links the central gateway ID to our specific VPC ID and selects the subnets to use for traffic.
+```
+
 
 
 
