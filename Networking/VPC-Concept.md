@@ -88,6 +88,15 @@ Create a VPC attachment using aws ec2 create-transit-gateway-vpc-attachment with
 This is exactly how we plug a VPC into our central router. We use the attachment command to link the Transit Gateway ID to our specific VPC and subnets.
 ```
 
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Connecting ten different AWS accounts often turns into a messy web of peer-to-peer connections. If every department has its own account, managing IP ranges and security rules gets out of hand. Worse, some teams should never talk to each other. Yet, a single shared network bridge can accidentally let traffic flow everywhere.
+
+Route Table Isolation and RAM
+AWS Transit Gateway acts like a cloud-native router for your VPCs. Think of it as a central train station. To keep different departments isolated, we use Transit Gateway route tables. They let you decide exactly which VPCs can talk to each other. For example, you can let production and development VPCs use the same gateway but keep their traffic completely separate. To make this work across different AWS accounts, we use AWS Resource Access Manager (RAM). RAM lets you safely share your central Transit Gateway with other accounts in your organization.
+
+First, we share the Transit Gateway with other accounts using RAM. Then, we isolate traffic by associating a VPC attachment with a specific route table in our central account.
+
+<img width="811" height="466" alt="image" src="https://github.com/user-attachments/assets/4ec06d11-3f7b-4994-bbe0-aa86ec298520" />
 
 
 
