@@ -98,6 +98,14 @@ First, we share the Transit Gateway with other accounts using RAM. Then, we isol
 
 <img width="811" height="466" alt="image" src="https://github.com/user-attachments/assets/4ec06d11-3f7b-4994-bbe0-aa86ec298520" />
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+The Core Network Policy
+Instead of configuring individual routers, we can use AWS Cloud WAN. Think of it like a central train dispatcher. Instead of asking every single train driver to coordinate routes, the dispatcher manages the entire track network from one screen. Cloud WAN uses a single document called a Core Network Policy (CNP). This JSON file basically defines your whole global network. You define logical segments, like development and production. The policy automatically handles routing between your regions. It makes sure traffic stays isolated where it should, without you writing static routes.
+
+<img width="860" height="410" alt="image" src="https://github.com/user-attachments/assets/7c4f3529-c519-4591-903b-6fb4be4f5208" />
+
+
 
 
 
