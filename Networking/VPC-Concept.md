@@ -19,9 +19,7 @@ Your startup has **10 VPCs** and each VPC must connect directly to every other V
 
 For a full mesh network:
 
-\[
-Connections = \frac{n(n-1)}{2}
-\]
+connections = n(n-1)/2
 
 Where:
 
@@ -30,21 +28,11 @@ Where:
 
 ## Calculation
 
-\[
-\frac{10(10-1)}{2}
-\]
+10(10-1)/2
 
-\[
-= \frac{10 \times 9}{2}
-\]
+10(9)/2
 
-\[
-= \frac{90}{2}
-\]
-
-\[
-= 45
-\]
+90/2 = 45
 
 ## Final Answer
 
