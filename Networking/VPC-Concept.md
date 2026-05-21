@@ -59,3 +59,23 @@ Because of this, large AWS environments usually prefer:
 - Hub-and-Spoke Networking
 - Shared Services VPC Architecture
 
+---------------------------------------------------------------------------------------------------------------------------------------
+The Hub-and-Spoke Network
+
+Think of VPC peering like building individual bridges between every single house in a town. It gets messy fast. AWS Transit Gateway acts like a central highway roundabout instead. Every VPC connects to this single hub, and the hub directs all the traffic. This hub-and-spoke model replaces complex mesh networks with a clean, centralized router. It dynamically manages traffic between your VPCs, on-premises data centers, and VPNs. The cool part is you only manage one connection per VPC instead of dozens.
+
+Basically, the first command spins up our central router. The second command plugs our specific VPC into that router using two of its subnets.
+
+<img width="807" height="485" alt="image" src="https://github.com/user-attachments/assets/bdaea3e0-a2da-4479-8b83-8836dd7335b2" />
+
+
+
+
+
+
+
+
+
+
+
+
